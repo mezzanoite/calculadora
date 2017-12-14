@@ -3,9 +3,11 @@ package br.com.fiap.calculator.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import br.com.fiap.calculator.R;
 
@@ -15,6 +17,8 @@ import br.com.fiap.calculator.R;
 public class IMCFragment extends Fragment {
 
 
+    private EditText etAltura;
+
     public IMCFragment() {
         // Required empty public constructor
     }
@@ -23,8 +27,9 @@ public class IMCFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_imc, container, false);
+        View v = inflater.inflate(R.layout.fragment_imc, container, false);
+        etAltura = (EditText) v.findViewById(R.id.etAltura);
+        return v;
     }
 
 }

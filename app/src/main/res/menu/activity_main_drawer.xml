@@ -12,9 +12,10 @@
             android:title="Calculadora" />
     </group>
 
+
     <item android:title="Conversores">
-        <group android:checkableBehavior="single">
-            <menu>
+        <menu>
+            <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/nav_medida"
                     android:icon="@drawable/ic_menu_medida"
@@ -27,8 +28,9 @@
                     android:id="@+id/nav_temperatura"
                     android:icon="@drawable/ic_menu_temperatura"
                     android:title="Temperatura" />
-            </menu>
-        </group>
+            </group>
+        </menu>
     </item>
+
 
 </menu>
